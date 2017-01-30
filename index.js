@@ -12,11 +12,11 @@ if (!databaseUri) {
 }
 
 var api = new ParseServer({
-  databaseURI: databaseUri || 'mongodb://localhost:27017/dev',
+  databaseURI: databaseUri || 'mongodb://imagetesting:betabulls@123@ds137149.mlab.com:37149/heroku_pbdq6c3h',
   cloud: process.env.CLOUD_CODE_MAIN || __dirname + '/cloud/main.js',
-  appId: process.env.APP_ID || 'myAppId',
-  masterKey: process.env.MASTER_KEY || '', //Add your master key here. Keep it secret!
-  serverURL: process.env.SERVER_URL || 'http://localhost:1337/parse',  // Don't forget to change to https if needed
+  appId: process.env.APP_ID || 'ZoPpxOWOIREFvtIzHDZuPDYc5zx7zVka4kFaKazy',
+  masterKey: process.env.MASTER_KEY || 'djDEBNelgvzBNk4REgzEvxBQ39nkyjMrFE8SbCgR', //Add your master key here. Keep it secret!
+  serverURL: process.env.SERVER_URL || 'https://wkbimage.herokuapp.com/parse',  // Don't forget to change to https if needed
   liveQuery: {
     classNames: ["Posts", "Comments"] // List of classes to support for query subscriptions
   }
